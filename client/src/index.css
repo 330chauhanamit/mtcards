@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Ruda';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+  font-family: "Ruda";
+  src: local("Ruda"),
+  url("./fonts/Ruda-Bold.ttf") format("truetype");
+  font-weight: bold;
+}

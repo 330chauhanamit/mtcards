@@ -1,0 +1,100 @@
+/* :root {
+    --primary: #79B4B7;
+    --secondary: #9D9D9D;
+    --tertiary:#FEFBF3;
+    --text : #F8F0DF; */
+  /* } */
+:root {
+    --primary: #01E08F;
+    --secondary: #2b2b2b;
+    --tertiary:#FEFBF3;
+    --text : #EAF7DF;
+  }
+
+.createPost-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+    z-index: 3;
+  }
+  .createPost-file-box{
+      display: none;
+  }
+  .createPost-input-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.createPost-input{
+    padding: 10px;
+}
+.createPost-image{
+    height: 200px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: none;
+}
+.createPost-image img{
+    height: 180px;
+    padding: 10px;
+}
+ 
+.createPost-description{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: #fff;
+    
+}
+.createPost-description > input{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin: 10px; 
+    border-radius: 5px;
+    color: var(--sec);
+    height: 40px;  
+}
+.createPost-description > select{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color: var(--secondary);
+    height: 40px;  
+    border-radius: 5px;  
+    margin: 10px;   
+}
+.createPost-description > input:focus,
+.createPost-description > select:focus{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.createPost-input-description{
+    border: 2px solid var(--text);
+    border-radius: 5px;  
+    margin: 10px;   
+    resize: none;
+    height: 100px;
+}
+.createPost-buttons{
+    /* box-sizing: border-box; */
+    display: flex;
+    width: 100%;
+}
+.createPost-buttons > input{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    background-color: #fafafa;
+    flex: 1;
+}
+.createPost-buttons > input :hover{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width:767px) {
+    .createPost-description{
+    width: 100%;
+}
+    .createPost-input-box{
+        width: 95vw;
+    }
+}
